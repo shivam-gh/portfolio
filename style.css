@@ -1,0 +1,356 @@
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #242424;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.navbar {
+  background-color: #040b14;
+}
+
+#skills,#education,#projects{
+  background-color: #f8fffa;
+}
+
+h1, h2, h3, h4, h5, h6, .mobile-name {
+  font-family: "Raleway", sans-serif;
+}
+
+h2,
+#sideNav,
+.fa-user-tag,
+.list-inline-item i:hover{
+  color: #173b6c;
+}
+
+h2{
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h4,
+h5,
+#sideNav {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+ul{
+  font-size: 18px;
+  text-align: left;
+}
+p{
+  font-size: 18px;
+  margin-bottom: 0rem;
+}
+
+em{
+  color:gray;
+  font-weight: bold;
+}
+
+h1,
+.mobile-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+.mobile-name,
+.family-name,
+.edu-icons {
+  color: #696969;
+}
+
+.list-social-icons a,
+a:hover,
+a:focus {
+  color: #c4c4c4;
+}
+
+.list-social-icons {
+  font-size: 1.5rem;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-social-icons a:hover,
+#sideNav .navbar-nav .nav-item a:hover,
+.nav-link a:hover,
+a {
+  color: #149ddd;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  font-size: 15px;
+  color: #6f7180;
+  text-align:start;
+}
+
+.navbar-nav .nav-item .nav-link .icon{
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 1.8rem;
+  color: #6f7180;
+}
+
+
+.navbar-nav:first-child {
+  border-top: 0.1rem groove #696969;
+}
+
+#mail-address a {
+  color: #242424;
+}
+
+.fa-ul {
+  margin-left: 0rem;
+}
+
+.form-group {
+  padding-left: 0;
+}
+
+.progress-bar,
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #3594dc,
+    #1874cd
+  );
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: white;
+  width: 50%;
+  border: none;
+}
+
+.btn-footer{
+  background-color: #040b14;
+  border:none;
+  margin-bottom: 10px;
+  color:#149ddd
+}
+.btn-footer:hover{
+  color: white;
+}
+
+.card {
+  border: none;
+}
+
+button:focus,
+button:active {
+  outline: solid #add8e6 2px;
+}
+
+.contact-form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skill-bars {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 50%;
+}
+
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+
+/* <--------------------------------------styling according to screen width--------------------------------------> */
+
+
+@media (max-width: 450px){
+  .edu-ul{
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #skill-bars {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-group {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 992px) {
+  h1,
+  h4 {
+    font-size: 5rem;
+    display: none;
+  }
+
+  .mobile-img {
+    height: 150px;
+    width: 150px;
+    border: solid #1c313a 7px;
+    border-radius: 100%;
+  }
+
+  .mobile-name {
+    font-size: 2.2rem;
+  }
+
+  .mobile-profession {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .resume-section {
+    padding-top: 7rem !important;
+    min-height: 100vh;
+
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.collapsing {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    transition: all 0.1s ease;
+  }
+
+  .navbar-collapse.show {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      height: auto;
+      width: 230px;
+      transition: left 0.35s ease;
+      background-color: #040b14;
+
+  }
+
+  .navbar {
+    background-color: #ffffff00;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(2, 159, 170)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .list-inline.list-social-icons{
+    margin-left: 2rem;
+  }
+  .navbar-nav{
+    align-items: center;
+  }
+  
+  .navbar-brand .img-profile {
+    margin-top: 5rem;
+    max-width: 6rem;
+    max-height: 6rem;
+    border: 0.2rem solid #696969;
+    border-radius: 100%;
+  }
+  
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    color: #6f7180;
+  }
+  .navbar-nav .nav-item .nav-link .icon{
+    font-size: 20px;
+    align-items:stretch;
+    color: #6f7180;
+  }
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 18rem;
+  }
+  .resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  #sideNav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+  }
+  .navbar-brand {
+    display: flex;
+    margin: 0 0 0;
+    padding: 0.5rem;
+  }
+ .navbar-brand .img-profile {
+    max-width: 7rem;
+    max-height: 7rem;
+    border: 0.3rem solid #696969;
+    border-radius: 100%;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav:first-child {
+    border-top: none;
+  }
+
+  .mobile-name,
+  .mobile-profession {
+    display: none;
+  }
+  .edu-ul{
+    text-align: left;
+  }
+}
+
